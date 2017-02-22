@@ -1,0 +1,6 @@
+2017/2/10 git学习总结：
+1、git init:初始化一个git仓库
+2、git add<file>:添加文件
+3、git commit:提交文件
+
+注意：commit可以一次提交多个文件，所以可以多次add不同的文件
