@@ -407,3 +407,8 @@
 #     for i in range(len(a)/2):
 #         a[i], a[N-i-1] = a[N-i-1], a[i]
 #     print a
+
+# git pull：远程强制覆盖本地文件
+# git fetch --all
+# git reset --hard origin/master
+# git pull
