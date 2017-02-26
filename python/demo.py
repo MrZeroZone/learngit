@@ -412,3 +412,86 @@
 # git fetch --all
 # git reset --hard origin/master
 # git pull
+
+# 41：模仿静态变量的用法
+# def varfunc():
+#     var = 0
+#     print 'var=%d' % var
+#     var += 1
+
+# if __name__ == '__main__':
+#     for i in range(3):
+#         varfunc()
+
+# # 类的属性
+# # 作为类的一个属性
+
+
+# class Static:
+#     StaticVar = 5
+
+#     def varfunc(self):
+#         self.StaticVar += 1
+#         print self.StaticVar
+
+# print Static.StaticVar
+# a = Static()
+# for i in range(3):
+#     a.varfunc()
+
+# 42：学习使用auot定义变量的用法
+
+# num = 2
+
+
+# def autofunc():
+#     num = 1
+#     print 'internal block num = %d' % num
+#     num += 1
+# for i in range(3):
+#     print 'The num = %d' % num
+#     num += 1
+#     autofunc()
+
+# 43：模仿静态变量（static)另一案例。
+# class Num:
+#     nNum = 1
+
+#     def inc(self):
+#         self.nNum += 1
+#         print 'nNum = %d' % self.nNum
+
+# if __name__ == '__main__':
+#     nNum = 2
+#     inst = Num()
+#     for i in range(3):
+#         nNum += 1
+#         print 'The num = %d' % nNum
+#         inst.inc()
+
+# 46：求输入数字的平方，如果平方运算后小于50则退出。
+# TRUE = 1
+# FALSE = 0
+
+
+# def SQ(x):
+#     return x*x
+# print '如果输入的数字小于50,程序将停止运行。'
+# again = 1
+# while again:
+#     num = int(raw_input('Please input number:'))
+#     print '运算结果为 %d' % (SQ(num))
+#     if num >= 50:
+#         again = TRUE
+#     else:
+#         again = FALSE
+
+# 49：使用lambda来创建匿名函数。
+# MAXIMUM = lambda x, y: (x > y)*x+(x < y)*y
+# MINIMUM = lambda x, y: (x > y)*y+(x < y)*x
+
+# if __name__ == '__main__':
+#     a = 10
+#     b = 20
+#     print 'The largar one is %d' % MAXIMUM(a, b)
+#     print 'The lower one is %d' % MINIMUM(a, b)
