@@ -495,3 +495,25 @@
 #     b = 20
 #     print 'The largar one is %d' % MAXIMUM(a, b)
 #     print 'The lower one is %d' % MINIMUM(a, b)
+
+# 54：取一个整数a从右端开始的4~7位。
+# if __name__ == '__main__':
+#     a = int(raw_input('input a number:\n'))
+#     b = a >> 4
+#     c = ~(~0 << 4)
+#     d = b & c
+#     print '%o\t%o' % (a, b)
+
+# 56：画图，学用circle画圆形。
+if __name__ == '__main__':
+    from Tkinter import *
+
+    canvas = Canvas(width=800, height=600, bg='yellow')
+    canvas.pack(expand=YES, fill=BOTH)
+    k = 1
+    j = 1
+    for i in range(0, 26):
+        canvas.create_oval(310-k, 250-k, 310+k, 250+k, width=1)
+        k += j
+        j += 0.3
+    mainloop()
